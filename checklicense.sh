@@ -4,7 +4,7 @@ gn() {
     growlnotify -n "fsmactweaks" -d "nu.dll.fsmactweaks" -a "F-Secure Mac Protection" "$@"
 }
 
-tf=`mktemp -t`
+tf=`/usr/bin/mktemp -t licensecheck`
 fsav --version > $tf
 rc=$?
 iseval=false
