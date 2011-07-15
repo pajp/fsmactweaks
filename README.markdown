@@ -3,9 +3,6 @@
 Tweaks for F-Secure Anti-Virus for Mac
 ======================================
 
-Problem
--------
-
 F-Secure has an anti-virus product for Mac OS X, called F-Secure Mac
 Protection in its "Technology Preview" incarnation and "F-Secure
 Anti-Virus for Mac" in the retail version. The product has some nice
@@ -22,11 +19,29 @@ better.
 Disabling real-time scanning
 ----------------------------
 
-See: https://gist.github.com/1021702
+First: https://gist.github.com/1021702
+
+then:
+	sudo launchctl unload -w /Library/LaunchDaemons/com.f-secure.clstate-periodic.plist
 
 Disabling the UI
 ----------------
 
 	sudo /usr/local/f-secure/bin/loginitem - "`find /Applications -name 'F-Secure Mac Protection.app' -depth 2`"
+	killall fscuif
 
+Install growlnotify
+-------------------
 
+Available as in the 'Extras' folder in the Growl (http://growl.info/)
+installer dmg.
+
+Set up scanning of downloaded files
+-----------------------------------
+
+Install a folder action Automator that runs the script
+"folderaction.sh" available in the repo, and configure it for the
+Downloads folder, with a code snippet like this:
+	  /Users/rasmus/fsmactweaks/folderaction.sh "$@"
+
+![Automator screenshot](folderaction.png)
