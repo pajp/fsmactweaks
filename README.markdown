@@ -24,6 +24,7 @@ TODO:
    until the UI is launched).
  * Database update notifications (not necessary, but some people find
    it oddly reassuring).
+ * Display malware name for infected files?
 
 
 Disabling real-time scanning
@@ -77,6 +78,11 @@ you have checked out fsmactweaks):
 	  /Users/rasmus/fsmactweaks/folderaction.sh "$@"
 
 ![Automator screenshot](https://github.com/pajp/fsmactweaks/raw/master/folderaction.png)
+
+You can test if it works by downloading the EICAR test file from
+http://www.eicar.org/ - the file should get .virus appended to its
+name and you should get a sticky Growl notification telling you that
+the file is malware.
 
 Create similar Folder Actions for all folders where regularly receive
 files, for example through BitTorrent. If you're using Transmission,
