@@ -63,19 +63,21 @@ automatic scanning of downloaded files.
 Set up scanning of downloaded files
 -----------------------------------
 
-Install a folder action Automator that runs the script
-"folderaction.sh" available in the repo, and configure it for the
-Downloads folder, with a code snippet like this:
+Start Automator and create a new Folder Action. Select your
+"Downloads" folder as the target by "Folder Action receives files and
+folders added to". Drag the "Run Shell Script" action into the
+Automator flow, and add a code snippet like this (adjust path to where
+you have checked out fsmactweaks):
 
 	  /Users/rasmus/fsmactweaks/folderaction.sh "$@"
 
 ![Automator screenshot](https://github.com/pajp/fsmactweaks/raw/master/folderaction.png)
 
-Create similar folder actions for all folders where regularly receive
+Create similar Folder Actions for all folders where regularly receive
 files, for example through BitTorrent. If you're using Transmission,
-for example, it may make sense to set the "Keep incomplete files
-in..." preference to a temporary directory and then add the Folder
-Action to the folder where the completed downloads are moved.
+it may make sense to set the "Keep incomplete files in..." preference
+to a temporary directory and then add the Folder Action to the folder
+where the completed downloads are moved.
 
 Set up license reminder
 -----------------------
