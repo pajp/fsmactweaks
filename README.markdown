@@ -44,4 +44,4 @@ Install a folder action Automator that runs the script
 Downloads folder, with a code snippet like this:
 	  /Users/rasmus/fsmactweaks/folderaction.sh "$@"
 
-![Automator screenshot](folderaction.png)
+![Automator screenshot](https://github.com/pajp/fsmactweaks/raw/master/folderaction.png)
