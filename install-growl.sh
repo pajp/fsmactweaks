@@ -33,4 +33,5 @@ sudo installer -package "${mountpoint}/Growl.pkg" -target /
 echo "Installing growlnotify..."
 sudo installer -package "${mountpoint}/Extras/growlnotify/growlnotify.pkg" -target /
 hdiutil detach "$mountpoint"
+rm $dmg
 echo "That went swell!"
