@@ -10,7 +10,7 @@ repository are tweaks I have made to make it suit my needs better.
 
 See:
 http://www.f-secure.com/en/web/home_global/protection/anti-virus-for-mac/overview
-http://www.f-secure.com/en_EMEA-Labs/beta-programs/home-users-beta/fsmac/
+and http://www.f-secure.com/en_EMEA-Labs/beta-programs/home-users-beta/fsmac/
 
 *NOTE:* This is not endorsed by F-Secure in any way. I am simply
 documenting this because I want to repeat the steps I have taken, and
