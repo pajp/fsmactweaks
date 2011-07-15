@@ -59,3 +59,19 @@ files, for example through BitTorrent. If you're using Transmission,
 for example, it may make sense to set the "Keep incomplete files
 in..." preference to a temporary directory and then add the Folder
 Action to the folder where the completed downloads are moved.
+
+Set up license reminder
+-----------------------
+
+If your license expires, you won't get any updates from F-Secure,
+which would kind of defeat the point of having an anti-virus. Without
+the F-Secure UI running, you won't notice if that happens. That's
+where the `checklicense.sh` script comes in handy, and its launchd(8)
+plist file that will run it once per day to let you know if you need
+to take action. To set up, modify the plist file so that the path to
+`checklicense.sh` matches your system, then run.
+
+	  launchctl load /Users/rasmus/fsmactweaks/nu.dll.fsmactweaks.licensecheck.plist
+
+(also modify the path to wherever the plist file is located on your
+system, of course)
