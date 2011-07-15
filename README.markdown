@@ -31,6 +31,10 @@ The user-interface can still be launched manually from the
 Applications folder, for example to scan files or manage your
 subscription.
 
+Install Growl
+-------------
+
+We'll use it for displaying important information. Find it here: http://growl.info/
 
 Install growlnotify
 -------------------
