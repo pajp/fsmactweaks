@@ -13,7 +13,7 @@ bit safer to receive files from untrusted sources.
 *NOTE:* This is not endorsed by F-Secure in any way. I am simply
 documenting this because I want to repeat the steps I have taken, and
 in the off chance someone else might find this useful, all the
-better.
+better. If things break, you're on your own.
 
 
 Disabling real-time scanning
@@ -21,7 +21,7 @@ Disabling real-time scanning
 
 First: https://gist.github.com/1021702
 
-then:
+then (optional, but reduces syslog noise):
 	sudo launchctl unload -w /Library/LaunchDaemons/com.f-secure.clstate-periodic.plist
 
 Disabling the UI
@@ -34,7 +34,8 @@ Install growlnotify
 -------------------
 
 Available as in the 'Extras' folder in the Growl (http://growl.info/)
-installer dmg.
+installer dmg. This will be used in the next section for setting up
+automatic scanning of downloaded files.
 
 Set up scanning of downloaded files
 -----------------------------------
@@ -46,3 +47,9 @@ Downloads folder, with a code snippet like this:
 	  /Users/rasmus/fsmactweaks/folderaction.sh "$@"
 
 ![Automator screenshot](https://github.com/pajp/fsmactweaks/raw/master/folderaction.png)
+
+Create similar folder actions for all folders where regularly receive
+files, for example through BitTorrent. If you're using Transmission,
+for example, it may make sense to set the "Keep incomplete files
+in..." preference to a temporary directory and then add the Folder
+Action to the folder where the completed downloads are moved.
