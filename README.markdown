@@ -3,9 +3,9 @@
 Tweaks for F-Secure Anti-Virus for Mac
 ======================================
 
-F-Secure has an anti-virus product for Mac OS X, called F-Secure Mac
-Protection in its "Technology Preview" incarnation and "F-Secure
-Anti-Virus for Mac" in the retail version. 
+F-Secure has an anti-virus product for Mac OS X, called *F-Secure Mac
+Protection* in its "Technology Preview" incarnation and *F-Secure
+Anti-Virus for Mac* in the retail version.
 
 *NOTE:* This is not endorsed by F-Secure in any way. I am simply
 documenting this because I want to repeat the steps I have taken, and
