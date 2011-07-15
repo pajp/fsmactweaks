@@ -24,3 +24,4 @@ if $invalid; then
     fi    
 fi
 
+rm $tf
