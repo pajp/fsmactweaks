@@ -34,10 +34,19 @@ subscription.
 Install Growl
 -------------
 
-We'll use it for displaying important information. Find it here: http://growl.info/
+We'll use it for displaying important information. Find it here:
+http://growl.info/
+
+
+To speed things up, you can run the included script
+`install-growl.sh`, which may or may not be able to automatically
+download and install the latest version of Growl and growlnotify.
 
 Install growlnotify
 -------------------
+
+(Naturally, you can skip this if you have successfully run
+`install-growl.sh`).
 
 Available as in the 'Extras' folder in the Growl (http://growl.info/)
 installer dmg. This will be used in the next section for setting up
