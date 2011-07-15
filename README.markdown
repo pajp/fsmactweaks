@@ -12,6 +12,14 @@ documenting this because I want to repeat the steps I have taken, and
 in the off chance someone else might find this useful, all the
 better. If things break, you're on your own.
 
+TODO:
+-----
+ * Product upgrade notifications (signature updates should work, but
+   you will not receive notifications about full product upgrades
+   until the UI is launched).
+ * Database update notifications (not necessary, but some people find
+   it oddly reassuring).
+
 
 Disabling real-time scanning
 ----------------------------
