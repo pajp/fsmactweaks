@@ -25,6 +25,8 @@ TODO:
  * Database update notifications (not necessary, but some people find
    it oddly reassuring).
  * Display malware name for infected files?
+ * Make a script that does everything described in this document
+   automatically
 
 
 Disabling real-time scanning
